@@ -1,7 +1,7 @@
 {
-    "name": "My Blog",
-    "short_name": "MyBlog",
-    "description": "웹 개발, JavaScript, React, Next.js에 관한 최신 기술과 실무 경험을 공유하는 블로그",
+    "name": "오리온의 손",
+    "short_name": "오리온의 손",
+    "description": "별과 천문학적 지식, 우주론에 관한 내용을 공유하는 블로그",
     "start_url": "/",
     "display": "standalone",
     "background_color": "#ffffff",
