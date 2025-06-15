@@ -25,8 +25,8 @@ export const metadata: Metadata = {
     default: "오리온의 손 - 천문학과 우주론 블로그",
     template: "%s | 오리온의 손",
   },
-  description: "별과 천문학적 지식, 우주론에 관한 내용을 공유하는 블로그입니다. 천체 관측부터 우주 탐사까지 다양한 주제를 다룹니다.",
-  keywords: ["천문학", "우주론", "별자리", "천체 관측", "우주 탐사", "천문학 블로그"],
+  description: "별과 천문학적 지식, 우주론에 관한 내용을 공유하는 블로그입니다. 천체 관측부터 우주 탐사까지, 우주의 신비로운 세계를 함께 탐구합니다.",
+  keywords: ["천문학", "우주론", "별자리", "천체 관측", "우주 탐사", "천문학 블로그", "오리온", "별", "우주"],
   authors: [{ name: "오리온의 손" }],
   creator: "오리온의 손",
   publisher: "오리온의 손",
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     locale: "ko_KR",
     url: "/",
     title: "오리온의 손 - 천문학과 우주론 블로그",
-    description: "별과 천문학적 지식, 우주론에 관한 내용을 공유하는 블로그입니다.",
+    description: "별과 천문학적 지식, 우주론에 관한 내용을 공유하는 블로그입니다. 천체 관측부터 우주 탐사까지, 우주의 신비로운 세계를 함께 탐구합니다.",
     siteName: "오리온의 손",
     images: [
       {
@@ -59,9 +59,9 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "오리온의 손 - 천문학과 우주론 블로그",
-    description: "별과 천문학적 지식, 우주론에 관한 내용을 공유하는 블로그입니다.",
+    description: "별과 천문학적 지식, 우주론에 관한 내용을 공유하는 블로그입니다. 천체 관측부터 우주 탐사까지, 우주의 신비로운 세계를 함께 탐구합니다.",
     images: ["/images/og-image.jpg"],
-    creator: "@myblog",
+    creator: "@orionshand",
   },
   
   // 기타 메타데이터

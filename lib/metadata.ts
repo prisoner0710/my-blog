@@ -3,14 +3,14 @@ import type { Metadata } from 'next';
 // 기본 사이트 정보
 const SITE_CONFIG = {
   name: '오리온의 손',
-  description: '별과 천문학적 지식, 우주론에 관한 내용을 공유하는 블로그',
+  description: '별과 천문학적 지식, 우주론에 관한 내용을 공유하는 블로그입니다. 천체 관측부터 우주 탐사까지, 우주의 신비로운 세계를 함께 탐구합니다.',
   url: process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3001',
   author: {
-    name: '블로그 작성자',
-    email: 'admin@myblog.com',
+    name: '오리온의 손',
+    email: 'admin@orionshand.com',
   },
   social: {
-    twitter: '@myblog',
+    twitter: '@orionshand',
   },
 } as const;
 

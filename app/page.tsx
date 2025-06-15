@@ -126,12 +126,15 @@ export default async function Home() {
       {/* Hero 섹션 */}
       <section className="text-center mb-20">
         <div className="max-w-4xl mx-auto">
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 bg-gradient-to-r from-primary via-purple-600 to-blue-600 bg-clip-text text-transparent">
-            Welcome to My Blog
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-2 bg-gradient-to-r from-primary via-purple-600 to-blue-600 bg-clip-text text-transparent">
+            Ad astra per aspera
           </h1>
+          <p className="text-sm md:text-base text-muted-foreground mb-6">
+            별까지 고난을 넘어
+          </p>
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-8 leading-relaxed">
-            웹 개발, JavaScript, React, Next.js에 관한 최신 기술과 실무 경험을 공유합니다. 
-            함께 성장하는 개발자가 되어보세요.
+            별과 천문학적 지식, 우주론에 관한 최신 정보와 깊이 있는 내용을 공유합니다. 
+            우주의 신비로운 세계를 함께 탐구해보세요.
           </p>
           
           {/* CTA 버튼들 */}
