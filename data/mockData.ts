@@ -106,9 +106,9 @@ export const mockCategories: Category[] = [
   },
   {
     id: 'cat-3',
-    name: '우주론',
-    slug: 'cosmology',
-    description: '우주의 기원, 구조, 진화에 대한 현대 우주론',
+    name: '우주물리학',
+    slug: 'space-physics',
+    description: '우주의 기원과 진화, 천체의 물리적 특성과 현상에 대한 연구',
     color: '#9775FA'  // 보라색 계열 (신비로운 우주 이미지)
   },
   {
@@ -120,13 +120,6 @@ export const mockCategories: Category[] = [
   },
   {
     id: 'cat-5',
-    name: '천체물리학',
-    slug: 'astrophysics',
-    description: '별과 은하의 물리적 특성과 현상에 대한 연구',
-    color: '#FCC419'  // 노란색 계열 (별빛 이미지)
-  },
-  {
-    id: 'cat-6',
     name: '우주 탐사',
     slug: 'space-exploration',
     description: '인류의 우주 탐사 역사와 미래',
