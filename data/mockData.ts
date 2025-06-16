@@ -67,21 +67,21 @@ export type { Comment, CommentFormData, CommentStats };
 export const mockAuthors: Author[] = [
   {
     id: 'author-1',
-    name: '김개발',
-    email: 'kim@example.com',
-    bio: '풀스택 개발자로 웹 기술과 사용자 경험에 관심이 많습니다.',
+    name: '김천문',
+    email: 'astro@galaxy.com',
+    bio: '천체물리학자이자 과학 저술가. 우주의 신비로움을 많은 사람들과 나누고 싶습니다.',
     socialLinks: {
-      github: 'https://github.com/kimdev',
-      twitter: 'https://twitter.com/kimdev'
+      github: 'https://github.com/astrokim',
+      twitter: 'https://twitter.com/astrokim'
     }
   },
   {
     id: 'author-2',
-    name: '박프론트',
-    email: 'park@example.com',
-    bio: '프론트엔드 전문가, React와 Next.js를 주로 다룹니다.',
+    name: '이별빛',
+    email: 'starlight@galaxy.com',
+    bio: '아마추어 천문가이자 천체 사진작가. 밤하늘의 아름다움을 카메라에 담습니다.',
     socialLinks: {
-      github: 'https://github.com/parkfront'
+      github: 'https://github.com/starphoto'
     }
   }
 ];
@@ -92,38 +92,38 @@ export const mockAuthors: Author[] = [
 export const mockCategories: Category[] = [
   {
     id: 'cat-1',
-    name: '웹 개발',
-    slug: 'web-development',
-    description: '웹 개발 전반에 관한 내용',
-    color: '#3B82F6'
+    name: '태양계',
+    slug: 'solar-system',
+    description: '태양계의 행성들과 위성, 소행성, 혜성 등에 대한 이야기',
+    color: '#FF6B6B'  // 붉은색 계열 (태양 이미지)
   },
   {
     id: 'cat-2',
-    name: 'JavaScript',
-    slug: 'javascript',
-    description: 'JavaScript 언어와 관련 기술',
-    color: '#F59E0B'
+    name: '별과 성운',
+    slug: 'stars-and-nebulae',
+    description: '항성의 일생과 다양한 성운, 성단에 대한 탐구',
+    color: '#4DABF7'  // 푸른색 계열 (젊은 별 이미지)
   },
   {
     id: 'cat-3',
-    name: 'React',
-    slug: 'react',
-    description: 'React 라이브러리와 생태계',
-    color: '#06B6D4'
+    name: '우주론',
+    slug: 'cosmology',
+    description: '우주의 기원, 구조, 진화에 대한 현대 우주론',
+    color: '#9775FA'  // 보라색 계열 (신비로운 우주 이미지)
   },
   {
     id: 'cat-4',
-    name: 'Next.js',
-    slug: 'nextjs',
-    description: 'Next.js 프레임워크',
-    color: '#000000'
+    name: '천체관측',
+    slug: 'astronomy-observation',
+    description: '천체 관측 방법과 장비, 관측 팁',
+    color: '#15AABF'  // 청록색 계열 (밤하늘 이미지)
   },
   {
     id: 'cat-5',
-    name: 'TypeScript',
-    slug: 'typescript',
-    description: 'TypeScript 언어와 타입 시스템',
-    color: '#3178C6'
+    name: '우주 탐사',
+    slug: 'space-exploration',
+    description: '인류의 우주 탐사 역사와 미래',
+    color: '#40C057'  // 초록색 계열 (희망찬 탐사 이미지)
   }
 ];
 
@@ -133,13 +133,13 @@ export const mockCategories: Category[] = [
 export const mockPosts: BlogPost[] = [
   {
     id: 'post-1',
-    title: 'Next.js 15와 App Router로 모던 웹 애플리케이션 구축하기',
-    slug: 'nextjs-15-app-router-modern-web-app',
-    content: '# Next.js 15와 App Router로 모던 웹 애플리케이션 구축하기\n\nNext.js 15가 출시되면서 많은 새로운 기능들이 추가되었습니다...',
-    excerpt: 'Next.js 15의 App Router를 활용하여 모던하고 성능 최적화된 웹 애플리케이션을 구축하는 방법을 알아봅니다.',
+    title: '목성의 유로파: 생명체가 존재할 수 있는 얼음 위성',
+    slug: 'europa-jupiter-moon-life',
+    content: '# 목성의 유로파: 생명체가 존재할 수 있는 얼음 위성\n\n태양계에서 생명체가 존재할 가능성이 있는 천체 중 하나인 유로파에 대해 알아봅니다...',
+    excerpt: '목성의 위성 유로파의 특징과 지하 바다에 생명체가 존재할 수 있는 가능성을 탐구합니다.',
     author: mockAuthors[0],
-    category: mockCategories[3],
-    tags: ['Next.js', 'App Router', '웹 개발', 'React'],
+    category: mockCategories[0], // 태양계
+    tags: ['목성', '위성', '유로파', '외계생명', '태양계 탐사'],
     publishedAt: new Date('2024-01-15'),
     updatedAt: new Date('2024-01-15'),
     readingTime: 8,
@@ -150,13 +150,13 @@ export const mockPosts: BlogPost[] = [
   },
   {
     id: 'post-2',
-    title: 'TypeScript 마스터하기: 고급 타입과 유틸리티 타입 활용법',
-    slug: 'typescript-advanced-types-utility-types',
-    content: '# TypeScript 마스터하기: 고급 타입과 유틸리티 타입 활용법\n\nTypeScript를 사용하다 보면 기본 타입만으로는 복잡한 애플리케이션의 타입을 정확히 표현하기 어려운 경우가 있습니다...',
-    excerpt: 'TypeScript의 고급 타입 시스템과 유틸리티 타입을 활용하여 더욱 안전하고 표현력 있는 코드를 작성하는 방법을 배워봅니다.',
+    title: '베텔게우스의 신비: 초신성이 될 거대 별의 이야기',
+    slug: 'betelgeuse-mystery-supernova',
+    content: '# 베텔게우스의 신비: 초신성이 될 거대 별의 이야기\n\n오리온자리의 붉은 초거성 베텔게우스는 언제 폭발할까요? 이 거대한 별의 생애와 미래에 대해 알아봅니다...',
+    excerpt: '오리온자리의 붉은 초거성 베텔게우스의 특징과 미래의 초신성 폭발 가능성을 분석합니다.',
     author: mockAuthors[1],
-    category: mockCategories[4],
-    tags: ['TypeScript', '고급 타입', '유틸리티 타입', '타입 안정성'],
+    category: mockCategories[1], // 별과 성운
+    tags: ['베텔게우스', '초거성', '초신성', '항성진화', '오리온자리'],
     publishedAt: new Date('2024-01-10'),
     updatedAt: new Date('2024-01-12'),
     readingTime: 12,
@@ -167,13 +167,13 @@ export const mockPosts: BlogPost[] = [
   },
   {
     id: 'post-3',
-    title: 'React 18의 새로운 기능들: Concurrent Features 완전 정복',
-    slug: 'react-18-concurrent-features-guide',
-    content: '# React 18의 새로운 기능들: Concurrent Features 완전 정복\n\nReact 18에서 도입된 Concurrent Features는 사용자 경험을 크게 향상시키는 혁신적인 기능들입니다...',
-    excerpt: 'React 18의 Concurrent Features를 활용하여 더욱 반응성 높고 사용자 친화적인 애플리케이션을 구축하는 방법을 알아봅니다.',
+    title: '암흑 물질과 암흑 에너지: 보이지 않는 우주의 비밀',
+    slug: 'dark-matter-energy-universe',
+    content: '# 암흑 물질과 암흑 에너지: 보이지 않는 우주의 비밀\n\n우주의 대부분을 차지하는 암흑 물질과 암흑 에너지의 특성과 그 존재를 증명하는 관측 증거들을 살펴봅니다...',
+    excerpt: '우주를 구성하는 신비로운 암흑 물질과 암흑 에너지의 본질과 그 발견 과정을 소개합니다.',
     author: mockAuthors[0],
-    category: mockCategories[2],
-    tags: ['React', 'React 18', 'Concurrent Features', 'Performance'],
+    category: mockCategories[2], // 우주론
+    tags: ['암흑물질', '암흑에너지', '우주론', '은하', '중력'],
     publishedAt: new Date('2024-01-08'),
     updatedAt: new Date('2024-01-08'),
     readingTime: 10,
@@ -184,16 +184,16 @@ export const mockPosts: BlogPost[] = [
   },
   {
     id: 'post-4',
-    title: 'JavaScript ES2024 새로운 기능들과 실무 활용 사례',
-    slug: 'javascript-es2024-new-features-practical-examples',
-    content: '# JavaScript ES2024 새로운 기능들과 실무 활용 사례\n\n매년 JavaScript에는 새로운 기능들이 추가됩니다. ES2024(ES15)에서도 개발자의 생산성을 높이는 유용한 기능들이 도입되었습니다...',
-    excerpt: 'JavaScript ES2024에서 새롭게 추가된 기능들을 살펴보고, 실무에서 이를 효과적으로 활용하는 방법을 알아봅니다.',
+    title: '천체 사진 촬영의 기초: 장비 선택부터 후보정까지',
+    slug: 'astrophotography-basics-guide',
+    content: '# 천체 사진 촬영의 기초: 장비 선택부터 후보정까지\n\n천체 사진을 시작하는 분들을 위한 완벽 가이드. 필요한 장비, 카메라 설정, 그리고 이미지 처리 방법을 상세히 설명합니다...',
+    excerpt: '천체 사진 촬영을 시작하는 방법부터 전문적인 이미지 처리 기법까지 자세히 알아봅니다.',
     author: mockAuthors[1],
-    category: mockCategories[1],
-    tags: ['JavaScript', 'ES2024', '새로운 기능', '모던 JavaScript'],
+    category: mockCategories[3], // 천체관측
+    tags: ['천체사진', '천체관측', '카메라', '망원경', '사진촬영'],
     publishedAt: new Date('2024-01-05'),
     updatedAt: new Date('2024-01-05'),
-    readingTime: 7,
+    readingTime: 15,
     viewCount: 642,
     likeCount: 43,
     featured: false,
@@ -201,13 +201,13 @@ export const mockPosts: BlogPost[] = [
   },
   {
     id: 'post-5',
-    title: '웹 성능 최적화 완벽 가이드: Core Web Vitals부터 실전 기법까지',
-    slug: 'web-performance-optimization-complete-guide',
-    content: '# 웹 성능 최적화 완벽 가이드: Core Web Vitals부터 실전 기법까지\n\n웹 성능은 사용자 경험과 SEO에 직접적인 영향을 미치는 중요한 요소입니다...',
-    excerpt: 'Google의 Core Web Vitals 지표부터 실전에서 바로 적용할 수 있는 웹 성능 최적화 기법까지 종합적으로 다룹니다.',
+    title: '블랙홀의 물리학: 사건의 지평선부터 특이점까지',
+    slug: 'black-hole-physics-guide',
+    content: '# 블랙홀의 물리학: 사건의 지평선부터 특이점까지\n\n블랙홀의 형성 과정과 물리적 특성, 그리고 최근의 관측 결과들을 통해 이 신비로운 천체의 본질에 다가갑니다...',
+    excerpt: '블랙홀의 물리학적 특성과 최근 관측된 놀라운 발견들을 심도있게 다룹니다.',
     author: mockAuthors[0],
-    category: mockCategories[0],
-    tags: ['성능 최적화', 'Core Web Vitals', 'SEO', '사용자 경험'],
+    category: mockCategories[2], // 우주론
+    tags: ['블랙홀', '중력', '상대성이론', '천체물리', '사건의지평선'],
     publishedAt: new Date('2024-01-03'),
     updatedAt: new Date('2024-01-03'),
     readingTime: 15,
@@ -218,13 +218,13 @@ export const mockPosts: BlogPost[] = [
   },
   {
     id: 'post-6',
-    title: 'CSS Grid vs Flexbox: 언제 무엇을 사용해야 할까?',
-    slug: 'css-grid-vs-flexbox-when-to-use',
-    content: '# CSS Grid vs Flexbox: 언제 무엇을 사용해야 할까?\n\nCSS의 레이아웃 시스템으로 Grid와 Flexbox가 널리 사용되고 있습니다. 하지만 언제 어떤 것을 사용해야 할지 헷갈리는 경우가 많습니다...',
-    excerpt: 'CSS Grid와 Flexbox의 차이점을 이해하고, 상황에 맞는 최적의 레이아웃 방법을 선택하는 가이드를 제공합니다.',
+    title: 'NASA의 아르테미스 프로그램: 달 탐사의 새로운 시대',
+    slug: 'nasa-artemis-program-moon',
+    content: '# NASA의 아르테미스 프로그램: 달 탐사의 새로운 시대\n\nNASA의 야심찬 달 탐사 프로그램인 아르테미스의 목표와 계획, 그리고 인류의 달 귀환이 가져올 변화를 살펴봅니다...',
+    excerpt: 'NASA의 아르테미스 프로그램을 통해 인류의 달 탐사가 어떻게 새로운 시대를 열어갈지 전망합니다.',
     author: mockAuthors[1],
-    category: mockCategories[0],
-    tags: ['CSS', 'Grid', 'Flexbox', '레이아웃'],
+    category: mockCategories[4], // 우주 탐사
+    tags: ['NASA', '아르테미스', '달탐사', '우주선', '우주기지'],
     publishedAt: new Date('2024-01-01'),
     updatedAt: new Date('2024-01-01'),
     readingTime: 9,
@@ -242,10 +242,10 @@ export const mockComments: Comment[] = [
   {
     id: 'comment-1',
     postId: 'post-1',
-    authorName: '김독자',
-    authorEmail: 'reader1@example.com',
+    authorName: '김우주',
+    authorEmail: 'space@example.com',
     authorWebsite: 'https://blog.example.com',
-    content: 'Next.js 15의 App Router에 대한 설명이 정말 도움이 되었습니다! 특히 서버 컴포넌트와 클라이언트 컴포넌트의 차이점 부분이 이해하기 쉽게 설명되어 있네요.',
+    content: '유로파의 지하 바다에 대한 설명이 정말 흥미롭네요! 특히 열수분출공이 존재할 가능성에 대한 부분이 인상적이었습니다.',
     createdAt: new Date('2024-01-16T10:30:00Z'),
     status: 'approved',
     likeCount: 12,
@@ -258,9 +258,9 @@ export const mockComments: Comment[] = [
   {
     id: 'comment-2',
     postId: 'post-1',
-    authorName: '박개발',
-    authorEmail: 'dev2@example.com',
-    content: '@김독자 저도 같은 생각입니다. 실제 프로젝트에 바로 적용해볼 수 있는 예제들이 많아서 좋았어요.',
+    authorName: '이탐사',
+    authorEmail: 'explorer@example.com',
+    content: '@김우주 저도 같은 생각입니다. NASA의 유로파 클리퍼 미션이 성공하면 더 많은 정보를 얻을 수 있을 것 같아요.',
     createdAt: new Date('2024-01-16T14:45:00Z'),
     status: 'approved',
     parentId: 'comment-1',
@@ -274,10 +274,10 @@ export const mockComments: Comment[] = [
   {
     id: 'comment-3',
     postId: 'post-1',
-    authorName: '김개발',
-    authorEmail: 'kim@example.com',
+    authorName: '김천문',
+    authorEmail: 'astro@galaxy.com',
     authorImageUrl: '/images/avatars/default.png',
-    content: '좋은 피드백 감사합니다! 다음 포스트에서는 더 실전적인 예제들을 다뤄보겠습니다.',
+    content: '좋은 피드백 감사합니다! 다음 포스트에서는 유로파 클리퍼 미션과 탐사 계획에 대해 더 자세히 다뤄보겠습니다.',
     createdAt: new Date('2024-01-16T16:20:00Z'),
     status: 'approved',
     parentId: 'comment-1',
@@ -291,9 +291,9 @@ export const mockComments: Comment[] = [
   {
     id: 'comment-4',
     postId: 'post-2',
-    authorName: '이타입',
-    authorEmail: 'type@example.com',
-    content: 'TypeScript의 고급 타입 기능들이 이렇게 활용할 수 있는지 몰랐네요. 특히 조건부 타입 부분이 인상깊었습니다.',
+    authorName: '오리온',
+    authorEmail: 'orion@example.com',
+    content: '베텔게우스의 밝기 변화에 대한 최근 관측 자료도 함께 보면 좋을 것 같아요. 2019년 급격한 어두워짐 현상이 초신성의 전조일까요?',
     createdAt: new Date('2024-01-12T09:15:00Z'),
     status: 'approved',
     likeCount: 7,
@@ -306,9 +306,9 @@ export const mockComments: Comment[] = [
   {
     id: 'comment-5',
     postId: 'post-3',
-    authorName: '리액트매니아',
-    authorEmail: 'react@example.com',
-    content: 'React 18의 Concurrent Features 정말 혁신적이네요! 실제 프로젝트에서 성능 향상을 체감할 수 있었습니다.',
+    authorName: '은하연구자',
+    authorEmail: 'galaxy@example.com',
+    content: '암흑 물질의 존재를 증명하는 은하 회전 곡선에 대한 설명이 매우 명확했습니다. 이 주제에 관심이 많아져 더 찾아보게 됐어요!',
     createdAt: new Date('2024-01-09T15:20:00Z'),
     status: 'approved',
     likeCount: 11,

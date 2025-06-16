@@ -22,14 +22,14 @@ const notoSansKR = Noto_Sans_KR({
 // SEO 메타데이터 설정
 export const metadata: Metadata = {
   title: {
-    default: "Betelgeuse - 천문학과 우주론 블로그",
-    template: "%s | Betelgeuse",
+    default: "오리온의 손 - 천문학과 우주론 블로그",
+    template: "%s | 오리온의 손",
   },
-  description: "별과 천문학적 지식, 우주론에 관한 내용을 공유하는 블로그입니다. 천체 관측부터 우주 탐사까지, 우주의 신비로운 세계를 함께 탐구합니다.",
-  keywords: ["천문학", "우주론", "별자리", "천체 관측", "우주 탐사", "천문학 블로그", "베텔게우스", "별", "우주"],
-  authors: [{ name: "Betelgeuse" }],
-  creator: "Betelgeuse",
-  publisher: "Betelgeuse",
+  description: "별과 천문학적 지식, 우주론에 관한 내용을 공유하는 블로그입니다. 천체 관측부터 우주 탐사까지 다양한 주제를 다룹니다.",
+  keywords: ["천문학", "우주론", "별자리", "천체 관측", "우주 탐사", "천문학 블로그"],
+  authors: [{ name: "오리온의 손" }],
+  creator: "오리온의 손",
+  publisher: "오리온의 손",
   formatDetection: {
     email: false,
     address: false,
@@ -42,15 +42,15 @@ export const metadata: Metadata = {
     type: "website",
     locale: "ko_KR",
     url: "/",
-    title: "Betelgeuse - 천문학과 우주론 블로그",
-    description: "별과 천문학적 지식, 우주론에 관한 내용을 공유하는 블로그입니다. 천체 관측부터 우주 탐사까지, 우주의 신비로운 세계를 함께 탐구합니다.",
-    siteName: "Betelgeuse",
+    title: "오리온의 손 - 천문학과 우주론 블로그",
+    description: "별과 천문학적 지식, 우주론에 관한 내용을 공유하는 블로그입니다.",
+    siteName: "오리온의 손",
     images: [
       {
         url: "/images/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Betelgeuse",
+        alt: "오리온의 손",
       },
     ],
   },
@@ -58,10 +58,10 @@ export const metadata: Metadata = {
   // Twitter Card 설정
   twitter: {
     card: "summary_large_image",
-    title: "Betelgeuse - 천문학과 우주론 블로그",
-    description: "별과 천문학적 지식, 우주론에 관한 내용을 공유하는 블로그입니다. 천체 관측부터 우주 탐사까지, 우주의 신비로운 세계를 함께 탐구합니다.",
+    title: "오리온의 손 - 천문학과 우주론 블로그",
+    description: "별과 천문학적 지식, 우주론에 관한 내용을 공유하는 블로그입니다.",
     images: ["/images/og-image.jpg"],
-    creator: "@betelgeuse",
+    creator: "@myblog",
   },
   
   // 기타 메타데이터
@@ -119,16 +119,16 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Blog",
-              "name": "Betelgeuse",
+              "name": "오리온의 손",
               "description": "별과 천문학적 지식, 우주론에 관한 내용을 공유하는 블로그",
               "url": process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000',
               "author": {
                 "@type": "Organization",
-                "name": "Betelgeuse"
+                "name": "오리온의 손"
               },
               "publisher": {
                 "@type": "Organization",
-                "name": "Betelgeuse",
+                "name": "오리온의 손",
                 "logo": {
                   "@type": "ImageObject",
                   "url": `${process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'}/images/logo.png`

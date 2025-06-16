@@ -76,7 +76,7 @@ export default function Header() {
                   B
                 </span>
               </div>
-              <span className="font-bold text-xl">Betelgeuse</span>
+              <span className="font-bold text-xl">My Blog</span>
             </Link>
           </div>
 
@@ -255,4 +255,4 @@ export default function Header() {
       </header>
     </>
   );
-}
+} 

@@ -2,15 +2,15 @@ import type { Metadata } from 'next';
 
 // 기본 사이트 정보
 const SITE_CONFIG = {
-  name: 'Betelgeuse',
-  description: '별과 천문학적 지식, 우주론에 관한 내용을 공유하는 공간입니다. 천체 관측부터 현대 천체물리학 이론까지, 우주의 신비로움을 함께 탐구합니다.',
+  name: '오리온의 손',
+  description: '별과 천문학적 지식, 우주론에 관한 내용을 공유하는 블로그',
   url: process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3001',
   author: {
-    name: 'Betelgeuse',
-    email: 'admin@betelgeuse.com',
+    name: '블로그 작성자',
+    email: 'admin@myblog.com',
   },
   social: {
-    twitter: '@betelgeuse',
+    twitter: '@myblog',
   },
 } as const;
 

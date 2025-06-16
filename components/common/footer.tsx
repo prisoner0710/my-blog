@@ -41,16 +41,16 @@ export default function Footer() {
                   B
                 </span>
               </div>
-              <span className="font-bold text-lg">Betelgeuse</span>
+              <span className="font-bold text-lg">My Blog</span>
             </div>
             
             {/* 저작권 정보 */}
             <div className="text-center md:text-left">
               <p className="text-sm text-muted-foreground">
-                © {currentYear} <span className="font-medium">Betelgeuse</span>. All rights reserved.
+                © {currentYear} <span className="font-medium">My Blog</span>. All rights reserved.
               </p>
               <p className="text-xs text-muted-foreground mt-1">
-                천문학과 우주론 블로그 • Built with Next.js
+                웹 개발 기술 블로그 • Built with Next.js
               </p>
             </div>
           </div>
@@ -108,4 +108,4 @@ export default function Footer() {
       </div>
     </footer>
   );
-}
+} 
