@@ -68,7 +68,7 @@ export const mockAuthors: Author[] = [
   {
     id: 'author-1',
     name: '김천문',
-    email: 'astro@galaxy.com',
+    email: 'astro@betelgeuse.com',
     bio: '천체물리학자이자 과학 저술가. 우주의 신비로움을 많은 사람들과 나누고 싶습니다.',
     socialLinks: {
       github: 'https://github.com/astrokim',
@@ -78,8 +78,8 @@ export const mockAuthors: Author[] = [
   {
     id: 'author-2',
     name: '이별빛',
-    email: 'starlight@galaxy.com',
-    bio: '아마추어 천문가이자 천체 사진작가. 밤하늘의 아름다움을 카메라에 담습니다.',
+    email: 'starlight@betelgeuse.com',
+    bio: '아마추어 천문가, 천체 사진 작가. 밤하늘의 아름다움을 카메라에 담습니다.',
     socialLinks: {
       github: 'https://github.com/starphoto'
     }
@@ -106,9 +106,9 @@ export const mockCategories: Category[] = [
   },
   {
     id: 'cat-3',
-    name: '우주론',
-    slug: 'cosmology',
-    description: '우주의 기원, 구조, 진화에 대한 현대 우주론',
+    name: '우주물리학',
+    slug: 'space-physics',
+    description: '우주의 기원과 진화, 천체의 물리적 특성과 현상에 대한 연구',
     color: '#9775FA'  // 보라색 계열 (신비로운 우주 이미지)
   },
   {
@@ -206,7 +206,7 @@ export const mockPosts: BlogPost[] = [
     content: '# 블랙홀의 물리학: 사건의 지평선부터 특이점까지\n\n블랙홀의 형성 과정과 물리적 특성, 그리고 최근의 관측 결과들을 통해 이 신비로운 천체의 본질에 다가갑니다...',
     excerpt: '블랙홀의 물리학적 특성과 최근 관측된 놀라운 발견들을 심도있게 다룹니다.',
     author: mockAuthors[0],
-    category: mockCategories[2], // 우주론
+    category: mockCategories[2], // 우주물리학
     tags: ['블랙홀', '중력', '상대성이론', '천체물리', '사건의지평선'],
     publishedAt: new Date('2024-01-03'),
     updatedAt: new Date('2024-01-03'),
